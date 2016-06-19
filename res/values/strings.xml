@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+ 	<string name="app_name">智能家居</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="light">灯光</string>
+    <string name="window">窗帘</string>
+    <string name="turnon">开</string>
+    <string name="turnoff">关</string>
+    <string name="chiken">厨房</string>
+    <string name="room">卧室</string>
+    <string name="livingroom">客厅</string>
+    <string name="tv">电视</string>
+    <string name="hint">模式</string>
+    
+    <color name="lightpink">#ffb6c1</color>
+ 	<color name="lightyellow">#ffff00</color>
+ 	<color name="mintcream">#f5fffa</color>
+ 	<color name="tianlan">#f0ffff</color>
+ 	<color name="danzise">#e6e6fa</color>
+ 	<color name="orange">#ff6600</color>
+ 	<color name="green">#33ff00</color>
+
+</resources>
