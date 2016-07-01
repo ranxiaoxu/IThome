@@ -9,11 +9,13 @@ import java.net.Socket;
 
 import android.app.IntentService;
 import android.content.Intent;
+import android.widget.TextView;
 
 public class Read extends IntentService{
 
-	public BufferedReader br;
+	public static BufferedReader br;
 	public Socket s=null;
+	
 	
 	
 	public Read() {
@@ -46,7 +48,7 @@ public class Read extends IntentService{
 		
 			String content = null;
 			
-			while((content=readfromClient())!=null){
+			while((content=read())!=null){
 			  
 			  Socketservice.data=content;
 			  
@@ -63,17 +65,19 @@ public class Read extends IntentService{
 	
 	
 	// shi ji shang shi ta zai du
-    private String readfromClient(){
+    public static String read(){
     	try{
     	
     		return br.readLine();
     		
     	} catch(IOException e){
     		
-    		Socketservice.socketList.remove(s);
+    		//Socketservice.socketList.remove(s);
     	}
     	return null;
     }
+    
+    
 }
 
 

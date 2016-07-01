@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
+<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
- 	<string name="app_name">智能家居</string>
+    <string name="app_name">智能家居</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
     <string name="light">灯光</string>
@@ -13,13 +13,21 @@
     <string name="livingroom">客厅</string>
     <string name="tv">电视</string>
     <string name="hint">模式</string>
+    <string name="tem">当前温度是:<xliff:g id="number">%1$d</xliff:g></string>
+    <string name="water">当前湿度是:<xliff:g id="number">%1$d</xliff:g></string>
     
+    <string name="normal">普通模式</string>
+    <string name="leave">离家模式</string>
+    <string name="moniter">监测模式</string>
+
     <color name="lightpink">#ffb6c1</color>
- 	<color name="lightyellow">#ffff00</color>
- 	<color name="mintcream">#f5fffa</color>
- 	<color name="tianlan">#f0ffff</color>
- 	<color name="danzise">#e6e6fa</color>
- 	<color name="orange">#ff6600</color>
- 	<color name="green">#33ff00</color>
+    <color name="lightyellow">#ffff00</color>
+    <color name="mintcream">#f5fffa</color>
+    <color name="tianlan">#f0ffff</color>
+    <color name="danzise">#e6e6fa</color>
+    <color name="orange">#ff6600</color>
+    <color name="green">#33ff00</color>
+
+    <string name="title_activity_mode">ModeActivity</string>
 
 </resources>

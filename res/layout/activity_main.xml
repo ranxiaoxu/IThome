@@ -8,25 +8,6 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.zhinengjiaju.MainActivity" >
 
-<Button
-        android:id="@+id/button1"
-        android:layout_width="120dp"
-        android:layout_height="120dp"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:background="@drawable/light"
-        android:textSize="40sp" />
-
-    <Switch
-        android:id="@+id/switch1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/button1"
-        android:layout_below="@+id/button1"
-        android:layout_marginTop="17dp"
-        android:textOff="@string/turnoff"
-        android:textOn="@string/turnon" />
-
     <Button
         android:id="@+id/button2"
         android:layout_width="120dp"
@@ -74,8 +55,46 @@
         android:layout_alignRight="@+id/button2"
         android:text="@string/hint"
         android:textSize="40sp" 
-        android:background="@color/lightyellow"/>
-    
+        android:background="@color/lightyellow"
+        android:onClick="choosemode"/>
 
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView1"
+        android:layout_alignLeft="@+id/button2"
+        android:layout_alignRight="@+id/button2"
+        android:text="@string/water"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/button1"
+        android:layout_alignParentTop="true"
+        android:text="@string/tem"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_alignLeft="@+id/switch1"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="35dp"
+        android:background="@drawable/light"
+        android:textSize="40sp" />
+
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/button3"
+        android:layout_below="@+id/button1"
+        android:layout_marginTop="14dp"
+        android:textOff="@string/turnoff"
+        android:textOn="@string/turnon" />
 
 </RelativeLayout>
